@@ -1,7 +1,7 @@
 import os
 import requests
 import json
-import google.generativeai as genai
+from google import genai
 from core.fallback import call_with_fallback, ProviderError
 
 def call_llm(prompt, system_prompt="", truncate=True):
@@ -58,11 +58,13 @@ def call_llm(prompt, system_prompt="", truncate=True):
         model = provider['model']
         
         if name == 'google':
-            genai.configure(api_key=api_key)
-            genai_model = genai.GenerativeModel(model)
+            client = genai.Client(api_key=api_key)
             try:
                 full_prompt = system_prompt + "\n\n" + prompt if system_prompt else prompt
-                response = genai_model.generate_content(full_prompt)
+                response = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=full_prompt
+                )
                 return response.text
             except Exception as e:
                 msg = str(e).lower()
@@ -129,10 +131,12 @@ def call_gemma4(prompt):
         model = provider['model']
         
         if name == 'google':
-            genai.configure(api_key=api_key)
-            genai_model = genai.GenerativeModel(model)
+            client = genai.Client(api_key=api_key)
             try:
-                response = genai_model.generate_content(prompt)
+                response = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=prompt
+                )
                 return response.text
             except Exception as e:
                 msg = str(e).lower()

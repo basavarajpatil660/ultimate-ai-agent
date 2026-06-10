@@ -1,7 +1,7 @@
 import os
 import base64
 import requests
-import google.generativeai as genai
+from google import genai
 from core.fallback import call_with_fallback, ProviderError
 
 def analyze_image(image_path, prompt):
@@ -43,13 +43,15 @@ def analyze_image(image_path, prompt):
         model = provider['model']
         
         if name == 'google':
-            genai.configure(api_key=api_key)
-            genai_model = genai.GenerativeModel(model)
+            client = genai.Client(api_key=api_key)
             try:
-                response = genai_model.generate_content([
-                    prompt,
-                    {"mime_type": "image/jpeg", "data": image_bytes}
-                ])
+                response = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=[
+                        {"mime_type": "image/jpeg", "data": image_bytes},
+                        prompt
+                    ]
+                )
                 return response.text
             except Exception as e:
                 msg = str(e).lower()
