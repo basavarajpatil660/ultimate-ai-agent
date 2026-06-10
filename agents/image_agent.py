@@ -2,8 +2,8 @@ import os
 import requests
 import time
 
-def generate_image(prompt, CLOUDFLARE_WORKER_URL=None,
-                   HUGGINGFACE_API_KEY=None,
+def generate_image(prompt, 
+                   CLOUDFLARE_WORKER_URL=None,
                    PIXAZO_API_KEY=None):
 
     # Truncate prompt to safe length
@@ -29,37 +29,24 @@ def generate_image(prompt, CLOUDFLARE_WORKER_URL=None,
         except Exception as e:
             print(f"Cloudflare image failed: {e}")
 
-    # Provider 2: Hugging Face FLUX
-    if HUGGINGFACE_API_KEY:
-        for attempt in range(3):
-            try:
-                response = requests.post(
-                    "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell",
-                    headers={
-                        "Authorization": f"Bearer {HUGGINGFACE_API_KEY}"
-                    },
-                    json={"inputs": prompt},
-                    timeout=60
-                )
-                if response.status_code == 200:
-                    with open("/tmp/output.png", "wb") as f:
-                        f.write(response.content)
-                    print("Image generated via HuggingFace")
-                    return {
-                        "file_path": "/tmp/output.png",
-                        "provider": "huggingface"
-                    }
-                elif response.status_code == 503:
-                    # Model loading, wait and retry
-                    wait = 10 * (attempt + 1)
-                    print(f"HF model loading, waiting {wait}s")
-                    time.sleep(wait)
-                else:
-                    print(f"HF failed: {response.status_code}")
-                    break
-            except Exception as e:
-                print(f"HuggingFace image failed: {e}")
-                break
+    # Provider 2: Pollinations AI (no key needed)
+    try:
+        import urllib.parse
+        encoded_prompt = urllib.parse.quote(prompt)
+        url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true&enhance=true"
+        response = requests.get(url, timeout=90)
+        if response.status_code == 200:
+            with open("/tmp/output.png", "wb") as f:
+                f.write(response.content)
+            print("Image generated via Pollinations")
+            return {
+                "file_path": "/tmp/output.png",
+                "provider": "pollinations"
+            }
+        else:
+            print(f"Pollinations failed: {response.status_code}")
+    except Exception as e:
+        print(f"Pollinations image failed: {e}")
 
     # Provider 3: Pixazo
     if PIXAZO_API_KEY:
