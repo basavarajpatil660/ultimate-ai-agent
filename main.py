@@ -30,7 +30,6 @@ def main():
         gmail = os.environ.get("GMAIL_ADDRESS")
         gmail_pw = os.environ.get("GMAIL_APP_PASSWORD")
         
-        HUGGINGFACE_API_KEY = os.environ.get("HUGGINGFACE_API_KEY", None)
         CLOUDFLARE_WORKER_URL = os.environ.get("CLOUDFLARE_WORKER_URL", None)
         PIXAZO_API_KEY = os.environ.get("PIXAZO_API_KEY", None)
         
@@ -80,7 +79,6 @@ def main():
                 res = generate_image(
                     prompt,
                     CLOUDFLARE_WORKER_URL=CLOUDFLARE_WORKER_URL,
-                    HUGGINGFACE_API_KEY=HUGGINGFACE_API_KEY,
                     PIXAZO_API_KEY=PIXAZO_API_KEY
                 )
                 if res:
