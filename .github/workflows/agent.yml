@@ -18,10 +18,11 @@ on:
       prompt:
         description: 'What do you want the agent to do?'
         required: false
-        type: string
+        default: ''
       mode:
-        description: 'Mode of operation'
-        required: true
+        description: 'Agent mode'
+        required: false
+        default: 'auto'
         type: choice
         options:
           - auto
@@ -31,7 +32,6 @@ on:
           - briefing
           - code
           - voice
-        default: 'auto'
 
 permissions:
   contents: write
@@ -56,8 +56,8 @@ jobs:
 
       - name: Run Agent
         env:
-          INPUT_PROMPT: ${{ github.event.inputs.prompt || '' }}
-          INPUT_MODE: ${{ github.event.inputs.mode || 'auto' }}
+          INPUT_PROMPT: ${{ github.event.inputs.prompt }}
+          INPUT_MODE: ${{ github.event.inputs.mode }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
@@ -77,11 +77,12 @@ jobs:
           PIXAZO_API_KEY: ${{ secrets.PIXAZO_API_KEY }}
         run: python main.py
 
-      - name: Commit and Push memory.json
+      - name: Commit memory update
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "agent@github-actions"
+          git config user.name "Ultimate AI Agent"
           git add memory.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update memory.json" && git push)
+          git diff --staged --quiet || git commit -m "Update memory [skip ci]"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

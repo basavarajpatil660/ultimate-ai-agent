@@ -3,7 +3,7 @@ import sys
 import traceback
 from datetime import datetime
 
-from core.memory import load_memory, save_memory, reset_daily_budget
+from core.memory import load_memory, save_memory, reset_daily_budget, update_budget
 from core.router import classify_task, detect_language
 from core.formatter import format_output
 from core.delivery import send_text, send_image, send_audio, send_alert, send_email
@@ -19,7 +19,7 @@ def main():
     try:
         # Load memory & reset budget if needed
         memory = load_memory()
-        reset_daily_budget()
+        memory = reset_daily_budget(memory)
         
         # Get env vars
         prompt = os.environ.get("INPUT_PROMPT", "").strip()
@@ -104,7 +104,7 @@ def main():
                         provider_used = f"llm:{res_text['provider']}, voice:{audio_res['provider']}"
                     else:
                         result_data = text_str
-                        task_type = "TEXT" # Fallback to text
+                        task_type = "text" # Fallback to text
                         provider_used = res_text["provider"]
                         
             if result_data:
@@ -115,6 +115,13 @@ def main():
                     send_image(telegram_token, chat_id, formatted["file_path"], formatted["caption"])
                 elif formatted["type"] == "audio":
                     send_audio(telegram_token, chat_id, formatted["file_path"], formatted["caption"])
+                
+                if provider_used == "mistral":
+                    update_budget("mistral", 500)
+                elif provider_used == "cerebras":
+                    update_budget("cerebras", 500)
+                elif provider_used == "groq":
+                    update_budget("groq", 1)
             else:
                 send_text(telegram_token, chat_id, "Failed to process task across all providers.")
                 

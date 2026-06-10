@@ -59,24 +59,18 @@ def should_skip_provider(provider):
         return True
     return False
 
-def reset_daily_budget():
-    data = load_memory()
-    last_run_str = data.get("last_run", "2024-01-01T00:00:00")
-    try:
-        last_run_date = datetime.fromisoformat(last_run_str).date()
-    except Exception:
-        last_run_date = datetime.now().date()
-        
-    today = datetime.now().date()
-    
-    if last_run_date != today:
-        data["run_count_today"] = 0
-        data["tasks_today"] = []
-        data["budget"] = {
+def reset_daily_budget(memory):
+    from datetime import datetime
+    today = datetime.now().strftime("%Y-%m-%d")
+    last_run = memory.get("last_run", "")
+    if today not in last_run:
+        memory["budget"] = {
             "cerebras_tokens_used": 0,
             "groq_requests_used": 0,
             "mistral_tokens_used": 0,
             "tavily_requests_used": 0
         }
-    data["last_run"] = datetime.now().isoformat()
-    save_memory(data)
+        memory["run_count_today"] = 0
+        memory["tasks_today"] = []
+    memory["last_run"] = datetime.now().isoformat()
+    return memory
