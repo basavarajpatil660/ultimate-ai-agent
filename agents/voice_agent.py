@@ -31,7 +31,7 @@ def generate_voice(text, ELEVENLABS_API_KEY=None,
                 with open("/tmp/output.mp3", "wb") as f:
                     f.write(response.content)
                 print("Voice generated via ElevenLabs")
-                return "/tmp/output.mp3"
+                return {"file_path": "/tmp/output.mp3", "provider": "elevenlabs"}
         except Exception as e:
             print(f"ElevenLabs failed: {e}")
 
@@ -40,7 +40,7 @@ def generate_voice(text, ELEVENLABS_API_KEY=None,
         tts = gTTS(text=text, lang='en')
         tts.save("/tmp/output.mp3")
         print("Voice generated via gTTS")
-        return "/tmp/output.mp3"
+        return {"file_path": "/tmp/output.mp3", "provider": "gtts"}
     except Exception as e:
         print(f"gTTS failed: {e}")
 
