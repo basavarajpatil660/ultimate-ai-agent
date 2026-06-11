@@ -31,6 +31,7 @@ def main():
         gmail_pw = os.environ.get("GMAIL_APP_PASSWORD")
         
         CLOUDFLARE_WORKER_URL = os.environ.get("CLOUDFLARE_WORKER_URL", None)
+        CLOUDFLARE_API_KEY = os.environ.get("CLOUDFLARE_API_KEY", None)
         PIXAZO_API_KEY = os.environ.get("PIXAZO_API_KEY", None)
         ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY", None)
         
@@ -80,6 +81,7 @@ def main():
                 res = generate_image(
                     prompt,
                     CLOUDFLARE_WORKER_URL=CLOUDFLARE_WORKER_URL,
+                    CLOUDFLARE_API_KEY=CLOUDFLARE_API_KEY,
                     PIXAZO_API_KEY=PIXAZO_API_KEY
                 )
                 if res:

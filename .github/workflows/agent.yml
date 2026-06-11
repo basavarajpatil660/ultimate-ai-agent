@@ -69,6 +69,8 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
           CLOUDFLARE_WORKER_URL: ${{ secrets.CLOUDFLARE_WORKER_URL }}
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          MODELSLAB_API_KEY: ${{ secrets.MODELSLAB_API_KEY }}
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
