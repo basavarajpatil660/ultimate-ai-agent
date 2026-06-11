@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-06-11T20:08:14.474919",
-  "run_count_today": 13,
+  "last_run": "2026-06-11T20:10:38.841712",
+  "run_count_today": 14,
   "provider_stats": {
     "mistral": {
       "success": 12,
@@ -94,6 +94,12 @@
       "type": "VOICE_OUT",
       "provider": "llm:mistral, voice:gtts",
       "time": "2026-06-11T20:08:18.203535"
+    },
+    {
+      "prompt": "Now I want to test the voice agent \nSo give me an prompt for testing it \nMake sure its not long \ni want the prompt means the voice should be only of 5 to max 7sec not more then that \nnow give me an prompt",
+      "type": "VOICE_OUT",
+      "provider": "llm:mistral, voice:gtts",
+      "time": "2026-06-11T20:10:51.781477"
     }
   ],
   "budget": {
