@@ -32,6 +32,7 @@ on:
           - briefing
           - code
           - voice
+          - image_read
 
 permissions:
   contents: write
