@@ -1,10 +1,7 @@
 import os
-
 def format_output(result_data, task_type, 
                   provider_used="unknown"):
-
     task_type = str(task_type).lower().strip()
-
     # Handle None result
     if result_data is None:
         return {
@@ -14,7 +11,6 @@ def format_output(result_data, task_type,
             "caption": "",
             "provider": provider_used
         }
-
     # IMAGE result
     if task_type == "image_gen":
         # result_data is a dict with file_path and provider
@@ -24,7 +20,6 @@ def format_output(result_data, task_type,
         else:
             fp = None
             prov = provider_used
-
         # Verify file actually exists
         if fp and os.path.exists(fp):
             return {
@@ -42,7 +37,6 @@ def format_output(result_data, task_type,
                 "caption": "",
                 "provider": prov
             }
-
     # AUDIO result
     if task_type == "voice_out":
         if isinstance(result_data, dict):
@@ -54,7 +48,6 @@ def format_output(result_data, task_type,
         else:
             fp = None
             prov = provider_used
-
         if fp and os.path.exists(fp):
             return {
                 "type": "audio",
@@ -71,7 +64,17 @@ def format_output(result_data, task_type,
                 "caption": "",
                 "provider": prov
             }
-
+    # IMAGE_READ result (vision analysis text)
+    if task_type == "image_read":
+        content = str(result_data) if result_data else \
+                  "No description received."
+        return {
+            "type": "text",
+            "content": f"🖼 {content}",
+            "file_path": None,
+            "caption": f"Analyzed by {provider_used}",
+            "provider": provider_used
+        }
     # TEXT result (all other task types)
     if isinstance(result_data, dict):
         content = result_data.get("content") or \
@@ -81,7 +84,6 @@ def format_output(result_data, task_type,
     else:
         content = str(result_data) if result_data else \
                   "No response received."
-
     return {
         "type": "text",
         "content": content,
