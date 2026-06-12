@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-06-12T18:21:44.332769",
-  "run_count_today": 13,
+  "last_run": "2026-06-12T18:24:43.906765",
+  "run_count_today": 14,
   "provider_stats": {
     "mistral": {
       "success": 12,
@@ -88,6 +88,12 @@
       "type": "IMAGE_GEN",
       "provider": "cloudflare",
       "time": "2026-06-12T18:21:51.703644"
+    },
+    {
+      "prompt": "Generate a single ultra-photorealistic image that intentionally stress-tests every major capability of the image model.\n\nSCENE:\n\nInside a futuristic luxury penthouse located on the 150th floor of a mega-city during a thunderstorm at blue hour.\n\nA floor-to-ceiling curved glass wall overlooks an enormous cyberpunk city containing:\n\n\u2022 thousands of illuminated windows\n\u2022 hundreds of unique vehicles\n\u2022 flying traffic\n\u2022 construction cranes\n\u2022 bridges\n\u2022 trains\n\u2022 rivers\n\u2022 stadiums\n\u2022 parks\n\u2022 holographic billboards\n\nFOREGROUND:\n\nA luxury carbon-fiber hypercar with butterfly doors open.\n\nNext to the vehicle stands a woman wearing a transparent raincoat.\n\nInside the raincoat:\n\n\u2022 visible fabric layers\n\u2022 stitching\n\u2022 zippers\n\u2022 buttons\n\u2022 realistic folds\n\nMICRO DETAIL TESTS:\n\nA luxury mechanical watch.\n\nThe watch must contain:\n\n\u2022 visible gears\n\u2022 screws\n\u2022 engraved markings\n\u2022 readable numbers\n\nA camera lying on a table.\n\nThe camera must contain:\n\n\u2022 readable buttons\n\u2022 lens markings\n\u2022 textured grip\n\u2022 glass reflections\n\nA crystal glass containing water.\n\nVisible:\n\n\u2022 refraction\n\u2022 caustics\n\u2022 bubbles\n\u2022 condensation droplets\n\nMATERIAL STRESS TEST:\n\nRender accurately:\n\n\u2022 skin\n\u2022 hair\n\u2022 glass\n\u2022 chrome\n\u2022 brushed metal\n\u2022 water\n\u2022 wet fabric\n\u2022 leather\n\u2022 wood\n\u2022 marble\n\u2022 carbon fiber\n\u2022 plastic\n\nLIGHTING STRESS TEST:\n\nSimultaneously render:\n\n\u2022 lightning flash\n\u2022 neon city lights\n\u2022 indoor warm lighting\n\u2022 monitor glow\n\u2022 reflections\n\u2022 indirect bounce light\n\u2022 volumetric fog\n\nREALISM TEST:\n\nVisible skin pores.\n\nTiny facial hairs.\n\nRealistic eyelashes.\n\nNatural eye moisture.\n\nIndividual hair strands.\n\nNo airbrushed skin.\n\nENVIRONMENT TEST:\n\nEvery object must be unique.\n\nNo duplicated people.\n\nNo duplicated buildings.\n\nNo repeated windows.\n\nNo repeated vehicles.\n\nNo repeated textures.\n\nCAMERA:\n\nPhase One XF IQ4\n150MP Medium Format\n\n85mm Lens\n\nHDR\n\nFocus stacking\n\nExtreme dynamic range\n\nOUTPUT GOAL:\n\nThe image must look like a real photograph captured by a professional photographer, not AI generated.\n\nNo artifacts.\n\nNo malformed anatomy.\n\nNo incorrect reflections.\n\nNo texture repetition.\n\nNo simplification.\n\nMaximum detail.\n\nMaximum realism.\n\nMaximum scene complexity.\n\nMaximum consistency.\n\nMaximum challenge.",
+      "type": "IMAGE_GEN",
+      "provider": "cloudflare",
+      "time": "2026-06-12T18:24:56.062476"
     }
   ],
   "budget": {
