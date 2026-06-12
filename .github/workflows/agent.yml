@@ -33,6 +33,7 @@ on:
           - code
           - voice
           - image_read
+          - image_edit
 
 permissions:
   contents: write
