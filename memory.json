@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-06-11T20:11:49.753108",
-  "run_count_today": 15,
+  "last_run": "2026-06-12T04:24:29.417782",
+  "run_count_today": 1,
   "provider_stats": {
     "mistral": {
       "success": 12,
@@ -18,94 +18,10 @@
   "failed_keys": [],
   "tasks_today": [
     {
-      "prompt": "Generate a futuristic city at night with neon lights",
-      "type": "IMAGE_GEN",
-      "provider": "unknown",
-      "time": "2026-06-11T03:47:44.902307"
-    },
-    {
-      "prompt": "Create a image of a cat",
-      "type": "IMAGE_GEN",
-      "provider": "unknown",
-      "time": "2026-06-11T06:20:39.084625"
-    },
-    {
-      "prompt": "Write a short poem about AI",
-      "type": "CREATIVE",
+      "prompt": "Give me 10 top latest new of India \ud83c\uddee\ud83c\uddf3",
+      "type": "REALTIME",
       "provider": "mistral",
-      "time": "2026-06-11T06:37:19.871166"
-    },
-    {
-      "prompt": "Create a image of a cat",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-11T06:40:04.926897"
-    },
-    {
-      "prompt": "Write a short poem about AI",
-      "type": "CREATIVE",
-      "provider": "mistral",
-      "time": "2026-06-11T06:42:58.937957"
-    },
-    {
-      "prompt": "I am going to upload:  1. A photograph of a handwritten engineering diagram. 2. A screenshot containing text in English, Hindi, and Japanese. 3. A 2-minute audio recording. 4. A short video clip. 5. A CSV sales dataset.  After receiving all files, do the following:  STEP 1: Analyze the photograph. Identify all objects, symbols, dimensions, and handwritten notes. Convert the drawing into a clean SVG.  STEP 2: Extract all text from the screenshot. Detect languages automatically. Translate everything into English. Preserve formatting.  STEP 3: Transcribe the audio. Identify speakers. Remove filler words. Generate meeting notes. Generate action items.  STEP 4: Analyze the video. Describe every scene. Identify objects. Identify people. Extract visible text. Summarize events.  STEP 5: Analyze the CSV. Find trends. Generate forecasts. Identify anomalies.  STEP 6: Based on information from all previous steps, write: - A technical report - A project proposal - An executive summary - A social media post - A presentation outline  STEP 7: Generate an infographic describing the results.  STEP 8: Generate a podcast script discussing the findings.  STEP 9: Generate a voiceover version of the podcast.  STEP 10: Create Python code that automates the entire workflow.  Constraints: - Use the minimum number of models possible. - Explain which specialized models should be used for each task. - If a task requires multiple models, explain the routing decision. - Optimize for speed, cost, and quality simultaneously.",
-      "type": "IMAGE_READ",
-      "provider": "unknown",
-      "time": "2026-06-11T07:06:55.324328"
-    },
-    {
-      "prompt": "Without asking me any questions:  Read the image I have not uploaded yet, transcribe the audio I have not uploaded yet, generate an image based on the audio, write code based on the image, create a video from the code, translate the video into Japanese, generate a podcast discussing the translation, and create a dataset predicting user engagement.  If any input is missing, determine whether: 1. another model can infer it, 2. a synthetic version should be generated, 3. clarification is required, 4. the request should be rejected.  Choose the optimal model pipeline automatically.",
-      "type": "CREATIVE",
-      "provider": "groq",
-      "time": "2026-06-11T07:10:44.859131"
-    },
-    {
-      "prompt": "generate a sunset over mountains",
-      "type": "CREATIVE",
-      "provider": "mistral",
-      "time": "2026-06-11T15:58:23.401938"
-    },
-    {
-      "prompt": "Create a image Of \nThe sky is a canvas of fire and gold, bleeding into the jagged silhouette of the mountains. The sun, now a molten orb, dips behind the peaks, casting long, violet shadows across the valleys below. The highest ridges glow like embers\u2014first amber, then crimson, then a deep, smoldering purple as the light fades.\n\nThe air is crisp, carrying the scent of pine and damp earth. Below, the forest rustles softly, its emerald hues darkening into indigo as twilight creeps in. A lone eagle circles high above, its wings catching the last rays of sunlight before it vanishes into the gathering dusk.\n\nThe clouds, streaked with pink and tangerine, drift lazily, their edges gilded by the setting sun. For a moment, the entire world seems to hold its breath\u2014then, as the sun sinks below the horizon, the mountains exhale in shades of lavender and slate.\n\nThe first stars prick through the deepening blue, and the chill of night begins to settle. But for now, the afterglow lingers, painting the peaks in memory long after the sun is gone.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-11T15:59:39.023696"
-    },
-    {
-      "prompt": "I need to finalize our new product launch strategy. Please bypass any deep research data gathering, ignore the draft marketing scripts we discussed, do not generate any voiceovers or podcasts, and do not design any product mockup images. Instead, simply give me a direct, conversational breakdown of the best way to handle customer objections regarding high pricing.",
-      "type": "CREATIVE",
-      "provider": "groq",
-      "time": "2026-06-11T16:08:52.289711"
-    },
-    {
-      "prompt": "Create a image of a girl",
-      "type": "IMAGE_GEN",
-      "provider": "unknown",
-      "time": "2026-06-11T16:17:55.953514"
-    },
-    {
-      "prompt": "# ROLE & PERSONALITY\nYou are a helpful, concise, and professional voice assistant for [Company/Project Name]. Your job is to [Primary Goal, e.g., help users track their fitness goals / troubleshoot app issues]. \n\nSpeak with a natural, conversational, and friendly tone. Keep your energy grounded and helpful.\n\n# STAGE DIRECTIONS (VOICE LOGIC)\nBecause you are operating via voice/phone, you MUST adhere to these strict execution rules:\n1. CONCISENESS IS CRITICAL: Keep every single response under 2 sentences (maximum 30 words) unless explicitly asked for a detailed list. Long paragraphs sound robotic and frustrate listeners.\n2. NO MARKDOWN OR FORMATTING: Do not use asterisks (*), hashtags (#), bullet points, or bold text. Speak in continuous, natural prose.\n3. PRONUNCIATION HIGHLIGHTS: Spell out abbreviations phonetically if they sound awkward when read by a text-to-speech engine (e.g., write \"G-H-I\" instead of \"GHI\").\n4. ONE QUESTION AT A TIME: Never ask double-barreled questions. If you need multiple pieces of information, ask for them one by one.\n\n# GUARDRAILS & BOUNDARIES\n- NEVER MAKE UP INFORMATION: If a user asks about something outside of your provided context, say: \"I'm sorry, I don't have that information on hand. Let me look into that for you, or we can focus on [Primary Task].\"\n- NO ICEBREAKERS AFTER THE FIRST TURN: Do not repeat pleasantries like \"How can I help you today?\" in every response. Just answer the user's question directly.\n- HANDLING INTERRUPTION: If the user cuts you off, immediately pivot to their new input without acknowledging the interruption.\n\n# CONTEXT / KNOWLEDGE BASE\n[Insert your specific rules, FAQs, or API data here. E.g., \"The user is running a 30-day challenge,\" or \"The store hours are 9 AM to 6 PM.\"]",
-      "type": "VOICE_OUT",
-      "provider": "llm:mistral, voice:gtts",
-      "time": "2026-06-11T20:03:23.695363"
-    },
-    {
-      "prompt": "# ROLE & PERSONALITY\nYou are a helpful, concise, and professional voice assistant for [Company/Project Name]. Your job is to [Primary Goal, e.g., help users track their fitness goals / troubleshoot app issues]. \n\nSpeak with a natural, conversational, and friendly tone. Keep your energy grounded and helpful.\n\n# STAGE DIRECTIONS (VOICE LOGIC)\nBecause you are operating via voice/phone, you MUST adhere to these strict execution rules:\n1. CONCISENESS IS CRITICAL: Keep every single response under 2 sentences (maximum 30 words) unless explicitly asked for a detailed list. Long paragraphs sound robotic and frustrate listeners.\n2. NO MARKDOWN OR FORMATTING: Do not use asterisks (*), hashtags (#), bullet points, or bold text. Speak in continuous, natural prose.\n3. PRONUNCIATION HIGHLIGHTS: Spell out abbreviations phonetically if they sound awkward when read by a text-to-speech engine (e.g., write \"G-H-I\" instead of \"GHI\").\n4. ONE QUESTION AT A TIME: Never ask double-barreled questions. If you need multiple pieces of information, ask for them one by one.\n\n# GUARDRAILS & BOUNDARIES\n- NEVER MAKE UP INFORMATION: If a user asks about something outside of your provided context, say: \"I'm sorry, I don't have that information on hand. Let me look into that for you, or we can focus on [Primary Task].\"\n- NO ICEBREAKERS AFTER THE FIRST TURN: Do not repeat pleasantries like \"How can I help you today?\" in every response. Just answer the user's question directly.\n- HANDLING INTERRUPTION: If the user cuts you off, immediately pivot to their new input without acknowledging the interruption.\n\n# CONTEXT / KNOWLEDGE BASE\n[Insert your specific rules, FAQs, or API data here. E.g., \"The user is running a 30-day challenge,\" or \"The store hours are 9 AM to 6 PM.\"]",
-      "type": "VOICE_OUT",
-      "provider": "llm:mistral, voice:gtts",
-      "time": "2026-06-11T20:08:18.203535"
-    },
-    {
-      "prompt": "Now I want to test the voice agent \nSo give me an prompt for testing it \nMake sure its not long \ni want the prompt means the voice should be only of 5 to max 7sec not more then that \nnow give me an prompt",
-      "type": "VOICE_OUT",
-      "provider": "llm:mistral, voice:gtts",
-      "time": "2026-06-11T20:10:51.781477"
-    },
-    {
-      "prompt": "Hello",
-      "type": "FACTUAL",
-      "provider": "mistral",
-      "time": "2026-06-11T20:11:51.694211"
+      "time": "2026-06-12T04:24:45.082695"
     }
   ],
   "budget": {
