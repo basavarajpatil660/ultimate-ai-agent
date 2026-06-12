@@ -34,7 +34,7 @@ def analyze_image(image_path, prompt,
                     prompt
                 ]
             )
-            return response.text
+            return {"result": response.text, "provider": "gemini-vision"}
         except Exception as e:
             print(f"Gemini vision failed: {e}")
     
@@ -56,7 +56,7 @@ def analyze_image(image_path, prompt,
                 }],
                 timeout=30
             )
-            return response.choices[0].message.content
+            return {"result": response.choices[0].message.content, "provider": "groq-vision"}
         except Exception as e:
             print(f"Groq vision failed: {e}")
     
