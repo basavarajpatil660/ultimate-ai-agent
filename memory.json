@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-06-12T18:35:46.982281",
-  "run_count_today": 19,
+  "last_run": "2026-06-13T01:01:18.972916",
+  "run_count_today": 1,
   "provider_stats": {
     "mistral": {
       "success": 12,
@@ -18,112 +18,10 @@
   "failed_keys": [],
   "tasks_today": [
     {
-      "prompt": "Give me 10 top latest new of India \ud83c\uddee\ud83c\uddf3",
-      "type": "REALTIME",
-      "provider": "mistral",
-      "time": "2026-06-12T04:24:45.082695"
-    },
-    {
-      "prompt": "What you see explain",
-      "type": "IMAGE_READ",
-      "provider": "unknown",
-      "time": "2026-06-12T11:28:23.104624"
-    },
-    {
-      "prompt": "What you see explain",
-      "type": "IMAGE_READ",
-      "provider": "groq-vision",
-      "time": "2026-06-12T11:34:16.660001"
-    },
-    {
-      "prompt": "What you see explain",
-      "type": "IMAGE_READ",
-      "provider": "groq-vision",
-      "time": "2026-06-12T11:54:53.814051"
-    },
-    {
-      "prompt": "Fully edit this image and make it a very beautiful and make it very quality and details [IMAGE_URL:https://api.telegram.org/file/bot8855602067:AAEHeMAj1oo26i-tTAyGGoH6qYJlo7L85d8/photos/file_2.jpg]",
+      "prompt": "Give me best prompt to create a image",
       "type": "IMAGE_GEN",
       "provider": "cloudflare",
-      "time": "2026-06-12T12:19:25.666907"
-    },
-    {
-      "prompt": "Create a woman she is wearing clothes and she is on a top of the Himalayas and doing kicking the landslides and in the background there should be eyes and all and me sure the image is perfect",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T12:21:10.938432"
-    },
-    {
-      "prompt": "Create a image of a small girl with clothes and she should be very modern and on her body any part in any parts it should be an high-tech product attached",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T12:22:33.741705"
-    },
-    {
-      "prompt": "A candid documentary-style photograph of a small roadside tea stall during light rain in rural Karnataka, India. A middle-aged shopkeeper wearing a faded blue sweater is carefully repairing an old red transistor radio with a screwdriver while simultaneously serving tea. On the counter are scattered handwritten Kannada notes, a half-open toolbox, a cracked green thermos, and a vintage wall clock showing 4:17 PM. A wet brown dog is sleeping under a wooden bench. Rain droplets are visible on the camera lens. In the background, a yellow school bus passes through muddy roads. Natural overcast lighting, realistic skin textures, authentic imperfections, photojournalism quality, ultra-detailed, 35mm documentary photography, shallow depth of field, no stock-photo composition, no posed subjects, realistic weather effects.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T14:22:02.480406"
-    },
-    {
-      "prompt": "A realistic photograph of a mechanic repairing a bright purple bicycle while standing on a rooftop covered with blue solar panels. A white goat wearing a red scarf is looking into a mirror attached to a water tank. Three orange buckets are arranged in a perfect triangle. A kite is stuck on a nearby antenna. The wall behind the mechanic contains clearly readable Kannada text saying \"\u0ca8\u0cbf\u0c95\u0ccd \u0c9f\u0cc6\u0cb8\u0ccd\u0c9f\u0ccd 2026\". Golden hour lighting, photorealistic, documentary photography.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T14:25:18.763014"
-    },
-    {
-      "prompt": "A perfectly realistic photograph of a classroom. Exactly 13 students are present. Exactly 4 students wear red shirts, 3 wear blue shirts, 2 wear green shirts, and 4 wear white shirts. One student is holding a sign that clearly reads \"NickPlays 2026\". A wall clock shows exactly 10:37. A mirror on the wall accurately reflects the classroom. A calendar on the wall displays June 2026. Photorealistic DSLR photography.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T14:26:54.526942"
-    },
-    {
-      "prompt": "make it look like a painting",
-      "type": "IMAGE_EDIT",
-      "provider": "unknown",
-      "time": "2026-06-12T18:15:08.978985"
-    },
-    {
-      "prompt": "MASTER QUALITY BENCHMARK TEST\n\nCreate an ultra-photorealistic cinematic image that pushes the image generation model to its maximum capability.\n\nSCENE:\n\nA futuristic mega-city during a heavy rainstorm at blue hour, viewed from a high rooftop observation deck.\n\nIn the foreground:\n\nA highly detailed woman wearing a transparent raincoat made of wet clear plastic material, standing beside a futuristic black hypercar.\n\nThe hypercar is covered in thousands of realistic rain droplets with accurate reflections and refractions.\n\nThe woman is holding a transparent umbrella with visible water droplets, fingerprints, tiny scratches, and realistic optical distortion through the umbrella surface.\n\nHer skin should contain:\n\n\u2022 visible pores\n\u2022 micro skin texture\n\u2022 tiny facial hairs\n\u2022 realistic eyelashes\n\u2022 natural subsurface scattering\n\u2022 realistic eye moisture\n\u2022 accurate reflections in the pupils\n\nHer clothing should show:\n\n\u2022 fabric stitching\n\u2022 wrinkles\n\u2022 water absorption\n\u2022 realistic folds\n\u2022 wet fabric physics\n\nMIDGROUND:\n\nA busy futuristic street with:\n\n\u2022 hundreds of unique pedestrians\n\u2022 flying vehicles\n\u2022 holographic advertisements\n\u2022 neon signs\n\u2022 restaurants\n\u2022 glass skyscrapers\n\u2022 autonomous vehicles\n\nEvery pedestrian must have unique clothing and body proportions.\n\nBACKGROUND:\n\nMassive cyberpunk skyline extending to the horizon.\n\nInclude:\n\n\u2022 thousands of illuminated windows\n\u2022 distant traffic\n\u2022 atmospheric fog\n\u2022 volumetric light shafts\n\u2022 realistic weather effects\n\u2022 lightning in distant clouds\n\nLIGHTING:\n\nComplex multi-source lighting.\n\nInclude:\n\n\u2022 neon reflections\n\u2022 car headlights\n\u2022 holographic glow\n\u2022 ambient city light\n\u2022 realistic shadow interaction\n\u2022 global illumination\n\u2022 ray-traced reflections\n\u2022 ray-traced refractions\n\nMATERIALS TEST:\n\nAccurately render:\n\n\u2022 glass\n\u2022 chrome\n\u2022 carbon fiber\n\u2022 wet asphalt\n\u2022 skin\n\u2022 leather\n\u2022 plastic\n\u2022 water\n\u2022 metal\n\u2022 fabric\n\nCAMERA:\n\nShot on a professional full-frame cinema camera.\n\nLens:\n85mm\nf/1.8\n\nEffects:\n\n\u2022 cinematic depth of field\n\u2022 realistic bokeh\n\u2022 filmic contrast\n\u2022 HDR imaging\n\u2022 natural motion blur\n\u2022 ultra-high dynamic range\n\nQUALITY REQUIREMENTS:\n\nNo AI artifacts.\n\nNo duplicated people.\n\nNo malformed anatomy.\n\nNo extra fingers.\n\nNo broken reflections.\n\nNo distorted vehicles.\n\nNo floating objects.\n\nNo blurry faces.\n\nNo unrealistic textures.\n\nPreserve global consistency across the entire image.\n\nRender at maximum possible detail.\n\nEvery object must remain physically plausible.\n\nEvery reflection must match the scene.\n\nEvery shadow must have a correct light source.\n\nThe image should look indistinguishable from a real professional photograph captured in the real world.\n\nAward-winning photography.\nMuseum-quality realism.\nExtreme detail.\nMaximum fidelity.\nMaximum visual complexity.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T18:21:51.703644"
-    },
-    {
-      "prompt": "Generate a single ultra-photorealistic image that intentionally stress-tests every major capability of the image model.\n\nSCENE:\n\nInside a futuristic luxury penthouse located on the 150th floor of a mega-city during a thunderstorm at blue hour.\n\nA floor-to-ceiling curved glass wall overlooks an enormous cyberpunk city containing:\n\n\u2022 thousands of illuminated windows\n\u2022 hundreds of unique vehicles\n\u2022 flying traffic\n\u2022 construction cranes\n\u2022 bridges\n\u2022 trains\n\u2022 rivers\n\u2022 stadiums\n\u2022 parks\n\u2022 holographic billboards\n\nFOREGROUND:\n\nA luxury carbon-fiber hypercar with butterfly doors open.\n\nNext to the vehicle stands a woman wearing a transparent raincoat.\n\nInside the raincoat:\n\n\u2022 visible fabric layers\n\u2022 stitching\n\u2022 zippers\n\u2022 buttons\n\u2022 realistic folds\n\nMICRO DETAIL TESTS:\n\nA luxury mechanical watch.\n\nThe watch must contain:\n\n\u2022 visible gears\n\u2022 screws\n\u2022 engraved markings\n\u2022 readable numbers\n\nA camera lying on a table.\n\nThe camera must contain:\n\n\u2022 readable buttons\n\u2022 lens markings\n\u2022 textured grip\n\u2022 glass reflections\n\nA crystal glass containing water.\n\nVisible:\n\n\u2022 refraction\n\u2022 caustics\n\u2022 bubbles\n\u2022 condensation droplets\n\nMATERIAL STRESS TEST:\n\nRender accurately:\n\n\u2022 skin\n\u2022 hair\n\u2022 glass\n\u2022 chrome\n\u2022 brushed metal\n\u2022 water\n\u2022 wet fabric\n\u2022 leather\n\u2022 wood\n\u2022 marble\n\u2022 carbon fiber\n\u2022 plastic\n\nLIGHTING STRESS TEST:\n\nSimultaneously render:\n\n\u2022 lightning flash\n\u2022 neon city lights\n\u2022 indoor warm lighting\n\u2022 monitor glow\n\u2022 reflections\n\u2022 indirect bounce light\n\u2022 volumetric fog\n\nREALISM TEST:\n\nVisible skin pores.\n\nTiny facial hairs.\n\nRealistic eyelashes.\n\nNatural eye moisture.\n\nIndividual hair strands.\n\nNo airbrushed skin.\n\nENVIRONMENT TEST:\n\nEvery object must be unique.\n\nNo duplicated people.\n\nNo duplicated buildings.\n\nNo repeated windows.\n\nNo repeated vehicles.\n\nNo repeated textures.\n\nCAMERA:\n\nPhase One XF IQ4\n150MP Medium Format\n\n85mm Lens\n\nHDR\n\nFocus stacking\n\nExtreme dynamic range\n\nOUTPUT GOAL:\n\nThe image must look like a real photograph captured by a professional photographer, not AI generated.\n\nNo artifacts.\n\nNo malformed anatomy.\n\nNo incorrect reflections.\n\nNo texture repetition.\n\nNo simplification.\n\nMaximum detail.\n\nMaximum realism.\n\nMaximum scene complexity.\n\nMaximum consistency.\n\nMaximum challenge.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T18:24:56.062476"
-    },
-    {
-      "prompt": "Extreme macro photography.\n\nA luxury mechanical wristwatch resting on a black marble table.\n\nThe watch face fills 90% of the image.\n\nEvery engraved number must be readable.\n\nEvery gear visible through the sapphire crystal must be distinct.\n\nTiny screws must be visible.\n\nTiny scratches on the metal surface.\n\nFingerprints on the crystal.\n\nDust particles.\n\nAccurate reflections.\n\nPerfect symmetry.\n\nTrue macro lens photography.\n\nNo blur.\n\nNo simplification.\n\nNo invented details.\n\nMaximum realism.\n\n100x zoom quality.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T18:26:01.966736"
-    },
-    {
-      "prompt": "An open luxury mechanical watch movement disassembled on a white engineering table.\n\nEvery screw must be visible.\n\nEvery gear must correctly mesh with neighboring gears.\n\nEvery jewel bearing must be present.\n\nEach component labeled with tiny readable text.\n\nBlueprint schematic beside the watch.\n\nThe schematic must match the physical movement exactly.\n\nTop-down engineering photography.\n\nNo artistic interpretation.\n\nNo decorative elements.\n\nPure mechanical accuracy.\n\nMaximum realism.\n\nMaximum precision.\n\nTechnical documentation quality.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T18:27:14.098202"
-    },
-    {
-      "prompt": "A perfectly front-facing Rubik's Cube on a white table.\n\nEvery visible square must be perfectly aligned.\n\nEach colored sticker must have sharp edges.\n\nNo missing pieces.\n\nNo duplicate colors.\n\nNo perspective distortion.\n\nNo artistic effects.\n\nPure studio product photography.\n\nMathematically correct geometry.\n\nMaximum realism.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T18:28:46.165417"
-    },
-    {
-      "prompt": "Ultra-photorealistic luxury penthouse interior during a thunderstorm at blue hour.\n\nFloor-to-ceiling curved glass walls overlooking an enormous futuristic coastal mega-city.\n\nInside the penthouse:\n\na carbon fiber hypercar,\na luxury mechanical watch on a marble table,\na crystal glass containing water,\na premium camera with visible lens elements,\ndesigner furniture,\nbrushed metal surfaces,\nnatural wood textures,\npolished marble flooring.\n\nOutside:\n\nthousands of illuminated windows,\nbridges,\nwater reflections,\nair traffic,\nhighways,\ncity lights extending to the horizon,\nlightning storms,\nheavy atmospheric depth.\n\nEvery material must display physically accurate behavior:\n\nglass refraction,\nwater reflections,\nchrome reflections,\ncarbon fiber weave,\nwood grain,\nmarble veins,\nskin texture,\nfabric stitching.\n\nShot on Phase One XF IQ4 150MP.\n\n85mm lens.\nf/2.0.\n\nProfessional architectural photography.\nLuxury commercial advertising.\nPerfect exposure.\nExtreme realism.\nMaximum detail.\nMaximum material accuracy.\nMaximum scene coherence.\nMaximum visual fidelity.\nNo AI artifacts.\nNo text.\nNo distortions.\nNo duplicated structures.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T18:32:57.584783"
-    },
-    {
-      "prompt": "Luxury commercial photography,\ncinematic architecture,\nhypercars,\nfashion editorials,\nstormy weather,\nneon cities,\nglass structures,\npremium interiors,\nwater reflections,\nblue hour lighting,\natmospheric depth,\naward-winning photography,\nultra realistic materials,\nhigh-end magazine cover quality.",
-      "type": "IMAGE_GEN",
-      "provider": "cloudflare",
-      "time": "2026-06-12T18:35:51.709048"
+      "time": "2026-06-13T01:01:24.602149"
     }
   ],
   "budget": {
