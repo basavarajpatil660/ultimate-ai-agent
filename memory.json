@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-06-14T11:15:00.800594",
-  "run_count_today": 1,
+  "last_run": "2026-06-14T11:21:06.684842",
+  "run_count_today": 2,
   "provider_stats": {
     "mistral": {
       "success": 12,
@@ -22,6 +22,12 @@
       "type": "IMAGE_READ",
       "provider": "groq-vision",
       "time": "2026-06-14T11:15:03.425407"
+    },
+    {
+      "prompt": "Which Ai your are",
+      "type": "FACTUAL",
+      "provider": "mistral",
+      "time": "2026-06-14T11:21:13.335875"
     }
   ],
   "budget": {
